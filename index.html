@@ -53,6 +53,7 @@ button {
     color: white;
     margin-top: 15px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 button:hover {
@@ -69,26 +70,23 @@ button:hover {
 
     <h1>INSCRIPTION UFM</h1>
 
-    
+
+    <form action="https://ufmfight.getform.com/pm8m4" method="POST">
+
         <label>Prénom</label>
-        <input type="text" name="Prenom" required>
+        <input type="text" name="prenom" required>
 
         <label>Âge</label>
-        <input type="number" name="Age" required>
-    
-<form action="https://formsubmit.co/ufm.fight2@gmail.com" method="POST">
+        <input type="number" name="age" required>
 
         <label>Poids (kg)</label>
-        <input type="number" name="Poids" required>
+        <input type="number" name="poids" required>
 
         <label>Type de combat</label>
-        <select name="Combat" required>
+        <select name="combat" required>
             <option value="Simple">Combat simple</option>
             <option value="Tournoi">Tournoi</option>
         </select>
-
-        <input type="hidden" name="_subject" value="Nouvelle inscription UFM">
-        <input type="hidden" name="_captcha" value="false">
 
         <button type="submit">S'inscrire</button>
 
@@ -98,4 +96,6 @@ button:hover {
 
 </body>
 </html>
+
+
 
