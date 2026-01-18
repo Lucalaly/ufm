@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>UFM - Inscription</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 0 15px red;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: red;
+    color: white;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: darkred;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <img src="logo.png.png" alt="Logo UFM">
+
+    <h1>INSCRIPTION UFM</h1>
+
+    <form action="https://formsubmit.co/ufm.fight2@gmail.com="POST">
+
+        <label>Prénom</label>
+        <input type="text" name="Prenom" required>
+
+        <label>Âge</label>
+        <input type="number" name="Age" required>
+
+        <label>Poids (kg)</label>
+        <input type="number" name="Poids" required>
+
+        <label>Type de combat</label>
+        <select name="Combat" required>
+            <option value="Simple">Combat simple</option>
+            <option value="Tournoi">Tournoi</option>
+        </select>
+
+        <input type="hidden" name="_subject" value="Nouvelle inscription UFM">
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">S'inscrire</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
